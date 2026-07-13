@@ -361,33 +361,50 @@ section h2{
     color:#e5e7eb;
 }
 
-.price-card .btn{
+
+
+.pricing-btn{
     display:block;
-    text-align:center;
+    width:100%;
     padding:16px;
-    border:2px solid #2563eb;
+    text-align:center;
     border-radius:10px;
-    text-decoration:none;
     font-size:17px;
     font-weight:600;
+    transition:.3s;
+}
+
+.btn-standard{
+    background:#fff;
     color:#2563eb;
-    transition:0.3s;
+    border:2px solid #2563eb;
 }
 
-.price-card .btn:hover{
+.btn-standard:hover{
     background:#2563eb;
-    color:#ffffff;
+    color:#fff;
 }
 
-.price-card.featured .btn{
+.btn-pro{
     background:#2563eb;
-    color:#ffffff;
-    border-color:#2563eb;
+    color:#fff;
+    border:2px solid #2563eb;
 }
 
-.price-card.featured .btn:hover{
+.btn-pro:hover{
     background:#1d4ed8;
     border-color:#1d4ed8;
+}
+
+.btn-team{
+    background:#fff;
+    color:#111827;
+    border:2px solid #374151;
+}
+
+.btn-team:hover{
+    background:#111827;
+    color:#fff;
 }
 
 @media(max-width:992px){
