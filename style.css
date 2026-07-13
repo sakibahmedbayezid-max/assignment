@@ -417,3 +417,239 @@ section h2{
         font-size:48px;
     }
 }
+
+
+
+/* ----- MENTORSHIP SECTION ----- */
+
+    
+    .mentorship-section {
+        padding: 5rem 2rem;
+        background: linear-gradient(160deg, #0b0f1a 0%, #141b2b 100%);
+        border-radius: 2.5rem;
+        margin: 3rem 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .mentorship-section::before {
+        content: '';
+        position: absolute;
+        top: -30%;
+        right: -10%;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(124, 58, 237, 0.10) 0%, transparent 70%);
+        pointer-events: none;
+    }
+
+    .mentorship-header {
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }
+
+    .section-tag {
+        display: inline-block;
+        background: rgba(124, 58, 237, 0.20);
+        color: #a78bfa;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 0.4rem 1.2rem;
+        border-radius: 100px;
+        border: 1px solid rgba(124, 58, 237, 0.25);
+        margin-bottom: 1rem;
+    }
+
+    .mentorship-header h2 {
+        font-size: clamp(2.4rem, 5vw, 3.6rem);
+        font-weight: 700;
+        color: #fff;
+        background: linear-gradient(135deg, #e8edff 0%, #a78bfa 80%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.25rem;
+        color: rgba(220, 235, 255, 0.7);
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    /* ----- MENTOR GRID ----- */
+    .mentorship-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .mentor-card {
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 1.5rem;
+        padding: 2rem 1.5rem 1.8rem;
+        text-align: center;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    .mentor-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(124, 58, 237, 0.3);
+        box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(124, 58, 237, 0.1);
+    }
+
+    .mentor-avatar {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    .mentor-avatar img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 3px solid rgba(124, 58, 237, 0.4);
+        transition: border-color 0.3s;
+    }
+
+    .mentor-card:hover .mentor-avatar img {
+        border-color: #7c3aed;
+    }
+
+    .expert-badge {
+        position: absolute;
+        bottom: -2px;
+        right: -8px;
+        background: #1e293b;
+        color: #c4b5fd;
+        font-size: 0.6rem;
+        font-weight: 700;
+        padding: 0.2rem 0.7rem;
+        border-radius: 100px;
+        border: 1px solid rgba(124, 58, 237, 0.3);
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+    .mentor-card h3 {
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.15rem;
+    }
+
+    .mentor-title {
+        color: rgba(196, 181, 253, 0.8);
+        font-size: 0.85rem;
+        font-weight: 400;
+        margin-bottom: 0.75rem;
+    }
+
+    .mentor-bio {
+        color: rgba(220, 235, 255, 0.7);
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1.2rem;
+        font-style: italic;
+        min-height: 3.2rem;
+    }
+
+    .mentor-stats {
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+        font-size: 0.8rem;
+        color: rgba(220, 235, 255, 0.5);
+        margin-bottom: 1.4rem;
+    }
+
+    .mentor-stats span {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+    }
+
+    .btn-book {
+        display: inline-block;
+        background: transparent;
+        color: #a78bfa;
+        font-weight: 600;
+        font-size: 0.9rem;
+        padding: 0.6rem 1.8rem;
+        border-radius: 60px;
+        border: 1.5px solid rgba(124, 58, 237, 0.4);
+        text-decoration: none;
+        transition: all 0.25s ease;
+        letter-spacing: 0.3px;
+        width: 100%;
+    }
+
+    .btn-book:hover {
+        background: linear-gradient(135deg, #7c3aed, #6d28d9);
+        color: #fff;
+        border-color: #7c3aed;
+        box-shadow: 0 8px 25px -8px rgba(124, 58, 237, 0.5);
+    }
+
+    /* ----- CTA Bottom ----- */
+    .mentorship-cta {
+        text-align: center;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .mentorship-cta p {
+        color: rgba(220, 235, 255, 0.6);
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .btn-primary {
+        display: inline-block;
+        background: linear-gradient(135deg, #7c3aed, #4f46e5);
+        color: #fff;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 0.8rem 2.8rem;
+        border-radius: 60px;
+        text-decoration: none;
+        transition: all 0.25s ease;
+        box-shadow: 0 12px 30px -10px rgba(124, 58, 237, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 20px 40px -12px rgba(124, 58, 237, 0.6);
+        background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    }
+
+    /* ----- Responsive ----- */
+    @media (max-width: 640px) {
+        .mentorship-section {
+            padding: 3rem 1.2rem;
+            border-radius: 1.8rem;
+        }
+        .mentorship-grid {
+            grid-template-columns: 1fr;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .mentor-card {
+            padding: 1.8rem 1.2rem;
+        }
+    }
+
+    @media (min-width: 641px) and (max-width: 900px) {
+        .mentorship-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
