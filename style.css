@@ -1,12 +1,8 @@
-/* ==========================
-   GOOGLE FONT
-========================== */
+/* GOOGLE FONT */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-/* ==========================
-   RESET
-========================== */
+/* RESET */
 
 *{
     margin:0;
@@ -37,9 +33,7 @@ ul{
     list-style:none;
 }
 
-/* ==========================
-   CONTAINER
-========================== */
+/* CONTAINER */
 
 .container{
     width:90%;
@@ -47,9 +41,7 @@ ul{
     margin:auto;
 }
 
-/* ==========================
-   BUTTON
-========================== */
+/* BUTTON */
 
 .btn{
     background:#2457ff;
@@ -65,9 +57,7 @@ ul{
     background:#1746df;
 }
 
-/* ==========================
-   NAVBAR
-========================== */
+/* NAVBAR */
 
 header{
     background:#fff;
@@ -119,9 +109,7 @@ nav a:hover{
     color:#2457ff;
 }
 
-/* ==========================
-   HERO
-========================== */
+/* HERO */
 
 .hero{
     position:relative;
@@ -189,9 +177,7 @@ nav a:hover{
     background:#1746df;
 }
 
-/* ==========================
-   SECTION TITLE
-========================== */
+/* SECTION TITLE */
 
 section h2{
     text-align:center;
@@ -200,9 +186,7 @@ section h2{
     font-weight:800;
 }
 
-/* ==========================
-   SPEAKERS
-========================== */
+/* Speaker */
 
 .speakers{
     padding:100px 0;
@@ -253,4 +237,183 @@ section h2{
 .speaker-info p{
     color:#666;
     line-height:1.6;
+}
+
+
+/* pricing */
+
+.pricing{
+    padding:110px 0;
+    background:#0d1117;
+}
+
+.pricing .section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.pricing .section-title h2{
+    font-size:52px;
+    font-weight:700;
+    color:#ffffff;
+    margin-bottom:16px;
+}
+
+.pricing .section-title p{
+    font-size:18px;
+    color:#9ca3af;
+}
+
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.price-card{
+    background:#ffffff;
+    border-radius:16px;
+    padding:35px;
+    display:flex;
+    flex-direction:column;
+    transition:0.3s;
+}
+
+.price-card:hover{
+    transform:translateY(-10px);
+}
+
+.price-card.featured{
+    background:#132235;
+    color:#ffffff;
+}
+
+.price-card h3{
+    font-size:15px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#6b7280;
+    margin-bottom:15px;
+}
+
+.price-card.featured h3{
+    color:#60a5fa;
+}
+
+.price{
+    font-size:62px;
+    font-weight:700;
+    line-height:1;
+    color:#111827;
+    margin-bottom:10px;
+}
+
+.price-card.featured .price{
+    color:#ffffff;
+}
+
+.price-text{
+    font-size:18px;
+    color:#6b7280;
+    margin-bottom:30px;
+}
+
+.price-card.featured .price-text{
+    color:#cbd5e1;
+}
+
+.price-card hr{
+    border:none;
+    border-top:1px solid #e5e7eb;
+    margin-bottom:30px;
+}
+
+.price-card.featured hr{
+    border-color:#2d3d52;
+}
+
+.price-card ul{
+    list-style:none;
+    margin-bottom:35px;
+    flex:1;
+}
+
+.price-card ul li{
+    position:relative;
+    padding-left:18px;
+    margin-bottom:18px;
+    font-size:17px;
+    color:#374151;
+    line-height:1.6;
+}
+
+.price-card ul li::before{
+    content:"•";
+    position:absolute;
+    left:0;
+    top:0;
+    color:#2563eb;
+    font-size:18px;
+}
+
+.price-card.featured ul li{
+    color:#e5e7eb;
+}
+
+.price-card .btn{
+    display:block;
+    text-align:center;
+    padding:16px;
+    border:2px solid #2563eb;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:600;
+    color:#2563eb;
+    transition:0.3s;
+}
+
+.price-card .btn:hover{
+    background:#2563eb;
+    color:#ffffff;
+}
+
+.price-card.featured .btn{
+    background:#2563eb;
+    color:#ffffff;
+    border-color:#2563eb;
+}
+
+.price-card.featured .btn:hover{
+    background:#1d4ed8;
+    border-color:#1d4ed8;
+}
+
+@media(max-width:992px){
+    .pricing-grid{
+        grid-template-columns:1fr;
+    }
+
+    .pricing .section-title h2{
+        font-size:40px;
+    }
+}
+
+@media(max-width:576px){
+    .pricing{
+        padding:80px 0;
+    }
+
+    .price-card{
+        padding:25px;
+    }
+
+    .pricing .section-title h2{
+        font-size:32px;
+    }
+
+    .price{
+        font-size:48px;
+    }
 }
